@@ -22,7 +22,7 @@ And they lived happily ever after. The End.
 
 What's this? You say something's still not clear about this whole C programming language thing?
 
-Well, to be quite honest, I'm not even sure what the above code does. It's a snippet from one of the entries in the 2001 International Obfuscated C Code Contest, a wonderful competition wherein the entrants attempt to write the most unreadable C code possible, with often surprising results.
+Well, to be quite honest, I'm not even sure what the above code does. It's a snippet from one of the entries in the 2001 [International Obfuscated C Code Contest](https://www.ioccc.org/)[^1], a wonderful competition wherein the entrants attempt to write the most unreadable C code possible, with often surprising results.
 
 The bad news is that if you're a beginner in this whole thing, all C code you see probably looks obfuscated! The good news is, it's not going to be that way for long.
 
@@ -34,7 +34,7 @@ And that's my excuse for writing such a hilariously large book for such a small,
 
 ## Audience
 
-This guide assumes that you've already got some programming knowledge under your belt from another language, such as Python, JavaScript, Java, Rust, Go, Swift, etc. Objective-C devs will have a particularly easy time of it!
+This guide assumes that you've already got some programming knowledge under your belt from another language, such as [Python](<https://en.wikipedia.org/wiki/Python_(programming_language)>)[^2], [JavaScript](https://en.wikipedia.org/wiki/JavaScript)[^3], [Java](<https://en.wikipedia.org/wiki/Java_(programming_language)>)[^4], [Rust](<https://en.wikipedia.org/wiki/Rust_(programming_language)>)[^5], [Go](<https://en.wikipedia.org/wiki/Go_(programming_language)>)[^6], [Swift](<https://en.wikipedia.org/wiki/Swift_(programming_language)>)[^7], etc. [Objective-C](https://en.wikipedia.org/wiki/Objective-C)[^8] devs will have a particularly easy time of it!
 
 We're going to assume you know what variables are, what loops do, how functions work, and so on.
 
@@ -44,7 +44,7 @@ If that's not you for whatever reason the best I can hope to provide is some hon
 
 The guide is in two volumes, and this is the first: the tutorial volume!
 
-The second volume is the library reference, and it's far more reference than tutorial.
+The second volume is the [library reference](https://beej.us/guide/bgclr/)[^9], and it's far more reference than tutorial.
 
 If you're new, go through the tutorial part in order, generally. The higher you get in chapters, the less important it is to go in order.
 
@@ -54,19 +54,19 @@ Finally, glancing at the index (if you're reading the print version), the refere
 
 ## Platform and Compiler
 
-I'll try to stick to Plain Ol'-Fashioned ISO-standard C. Well, for the most part. Here and there I might go crazy and start talking about POSIX or something, but we'll see.
+I'll try to stick to Plain Ol'-Fashioned [ISO-standard](https://en.wikipedia.org/wiki/ANSI_C)[^10] C. Well, for the most part. Here and there I might go crazy and start talking about [POSIX](https://en.wikipedia.org/wiki/POSIX)[^11] or something, but we'll see.
 
 **Unix** users (e.g. Linux, BSD, etc.) try running `cc` or `gcc` from the command-line. You might already have a compiler installed. If you don't, search your distribution for installing `gcc` or `clang`.
 
-**Windows** users should check out Visual Studio Community. Or, if you're looking for a more Unix-like experience (recommended!), install WSL and `gcc`.
+**Windows** users should check out [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/)[^12]. Or, if you're looking for a more Unix-like experience (recommended!), install [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)[^13] and `gcc`.
 
-**Mac** users will want to install XCode, and in particular the command line tools.
+**Mac** users will want to install [XCode](https://developer.apple.com/xcode/)[^14], and in particular the command line tools.
 
 There are a lot of compilers out there, and virtually all of them will work for this book. And a C++ compiler will compile a lot of (but not all!) C code. Best use a proper C compiler if you can.
 
 ## Official Homepage
 
-This official location of this document is https://beej.us/guide/bgc/. Maybe this'll change in the future, but it's more likely that all the other guides are migrated off Chico State computers.
+This official location of this document is [https://beej.us/guide/bgc/](https://beej.us/guide/bgc/)[^15]. Maybe this'll change in the future, but it's more likely that all the other guides are migrated off Chico State computers.
 
 ## Email Policy
 
@@ -114,8 +114,27 @@ The hardest things about writing these guides are:
 A lot of people have helped me through this process, and I want to acknowledge those who have made this book possible.
 
 - Everyone on the Internet who decided to help share their knowledge in one form or another. The free sharing of instructive information is what makes the Internet the great place that it is.
-- The volunteers at [cppreference.com](https://en.cppreference.com/) who provide the bridge that leads from the spec to the real world.
-- The helpful and knowledgeable folks on [comp.lang.c](https://groups.google.com/g/comp.lang.c) and [r/C_Programming](https://www.reddit.com/r/C_Programming/) who got me through the tougher parts of the language.
+- The volunteers at [cppreference.com](https://en.cppreference.com/)[^16] who provide the bridge that leads from the spec to the real world.
+- The helpful and knowledgeable folks on [comp.lang.c](https://groups.google.com/g/comp.lang.c)[^17] and [r/C_Programming](https://www.reddit.com/r/C_Programming/)[^18] who got me through the tougher parts of the language.
 - Everyone who submitted corrections and pull-requests on everything from misleading instructions to typos.
 
 Thank you! ♥
+
+[^1]: https://www.ioccc.org/
+[^2]: https://en.wikipedia.org/wiki/Python_(programming_language)
+[^3]: https://en.wikipedia.org/wiki/JavaScript
+[^4]: https://en.wikipedia.org/wiki/Java_(programming_language)
+[^5]: https://en.wikipedia.org/wiki/Rust_(programming_language)
+[^6]: https://en.wikipedia.org/wiki/Go_(programming_language)
+[^7]: https://en.wikipedia.org/wiki/Swift_(programming_language)
+[^8]: https://en.wikipedia.org/wiki/Objective-C
+[^9]: https://beej.us/guide/bgclr/
+[^10]: https://en.wikipedia.org/wiki/ANSI_C
+[^11]: https://en.wikipedia.org/wiki/POSIX
+[^12]: https://visualstudio.microsoft.com/vs/community/
+[^13]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+[^14]: https://developer.apple.com/xcode/
+[^15]: https://beej.us/guide/bgc/
+[^16]: https://en.cppreference.com/
+[^17]: https://groups.google.com/g/comp.lang.c
+[^18]: https://www.reddit.com/r/C_Programming/
